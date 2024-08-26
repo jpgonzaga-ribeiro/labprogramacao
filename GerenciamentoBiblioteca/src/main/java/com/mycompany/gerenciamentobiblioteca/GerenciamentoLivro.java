@@ -38,6 +38,7 @@ public class GerenciamentoLivro extends Gerenciamento {
     @Override
     public void Cadastrar() {
         livros.add(this);
+        System.out.println("Livro cadastrado: " + this.getTitulo());
     }
 
     // Método para remover um livro da lista

@@ -42,7 +42,6 @@ public class GerenciamentoEmprestimo {
         //remoçao atraves do idLivro e do nomeMembro, para a exclusao da chave e valor do HashMap
         emprestimosList.remove(idLivro, nomeMembro);
         System.out.println("ATENÇÃO! O livro de número: " + idLivro + " - Foi entregue pelo - Membro: " + nomeMembro);
-
     }
    
     
