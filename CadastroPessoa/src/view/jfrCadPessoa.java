@@ -170,8 +170,8 @@ public class jfrCadPessoa extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbImprimeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbImprimeActionPerformed
-        JOptionPane.showMessageDialog(null,"CPF: "+ jtCpf.getText() +"\nNome: "+ jtNome.getText() + "\nEndereço: "+ jtEndereco.getText() + "\nEstado: "+ jcEstado.getItemAt(WIDTH) +
-                "\nCargo: " + jcCargo.getItemAt(WIDTH));
+        JOptionPane.showMessageDialog(null,"CPF: "+ jtCpf.getText() +"\nNome: "+ jtNome.getText() + "\nEndereço: "+ jtEndereco.getText() + "\nEstado: "+ jcEstado.getItemAt(jcEstado.getSelectedIndex()) +
+                "\nCargo: " + jcCargo.getItemAt(jcCargo.getSelectedIndex()));
     }//GEN-LAST:event_jbImprimeActionPerformed
 
     private void jtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtNomeActionPerformed
