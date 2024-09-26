@@ -4,7 +4,9 @@
  */
 package janelacomponentesgui;
 
+import javax.swing.SwingUtilities;
 import view.Janela;
+
 
 /**
  *
@@ -16,9 +18,12 @@ public class JanelaComponentesGUI {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        java.awt.EventQueue.invokeLater(() -> {
-            new Janela().setVisible(true);
+        SwingUtilities.invokeLater(() -> {
+            Janela janela = new Janela();
+            janela.setVisible(true);
         });
     }
+
+
     
 }
