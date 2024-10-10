@@ -4,18 +4,16 @@
  */
 package projetoconexao;
 
+import conexao.Conexaojdbc;
+import dao.UsuarioDAO;
+
 /**
  *
  * @author Aluno
  */
 public class Principal {
     public static void main(String[] args) {
-        try{
-            Conexaojdbc conn = new Conexaojdbc();
-            conn.getConnection();
-            System.out.println("Conectado!");
-        } catch(Exception e){
-            System.out.println("Não Conectado!");            
-        }
+        UsuarioDAO usuario = new UsuarioDAO();
+        usuario.listarUsuario();
     }
 }
